@@ -29,3 +29,8 @@ A Python toolkit for **voice fingerprinting** and **similarity scoring** by conv
 | **Deployment**     | Docker, Flask (optional for APIs)                                               |  
 
 ---
+
+## 📚 **Related Resources**  
+- [**Research Notes**](Reserach-Notes.md): Detailed comparisons of object detection methods (YOLOv8, MediaPipe, AWS Rekognition) and voice similarity techniques.  
+- [LibROSA Documentation](https://librosa.org/doc/latest/index.html)  
+- [Ultralytics YOLOv8 Docs](https://docs.ultralytics.com/)  
