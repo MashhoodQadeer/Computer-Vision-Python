@@ -78,5 +78,119 @@
 
 ---
 
-## 🔍 **SEO Keywords**  
-*#ObjectDetection #ComputerVision #VoiceRecognition #DeepLearning #YOLOv8 #MediaPipe #AWSRekognition #AIResearch*  
+# YOLOv8 Evaluation Metrics Report
+
+## Formula Explanations
+
+**1. Precision**
+- Formula: `Precision = TP / (TP + FP)`
+- Measures how accurate the predictions are. Of all predicted positives, how many were correct?
+
+**2. Recall**
+- Formula: `Recall = TP / (TP + FN)`
+- Measures the model’s ability to find all relevant instances. Of all actual positives, how many were found?
+
+**3. mAP (Mean Average Precision)**
+- Calculated as the mean of precision values across different thresholds.
+- Gives a single number to summarize the model’s precision-recall tradeoff.
+
+### Observed Objects
+![Observed Objects](./notes-assets/objects.png)
+
+
+## Threshold-wise Evaluation
+
+### Threshold: 0.75
+- **True Positives (TP):** 3
+- **False Positives (FP):** 0
+- **False Negatives (FN):** 3
+- **Precision:** 1.00
+- **Recall:** 0.50
+
+### Threshold: 0.70
+- **True Positives (TP):** 4
+- **False Positives (FP):** 0
+- **False Negatives (FN):** 2
+- **Precision:** 1.00
+- **Recall:** 0.67
+
+### Threshold: 0.65
+- **True Positives (TP):** 4
+- **False Positives (FP):** 0
+- **False Negatives (FN):** 2
+- **Precision:** 1.00
+- **Recall:** 0.67
+
+### Threshold: 0.60
+- **True Positives (TP):** 5
+- **False Positives (FP):** 1
+- **False Negatives (FN):** 1
+- **Precision:** 0.83
+- **Recall:** 0.83
+
+### Threshold: 0.55
+- **True Positives (TP):** 5
+- **False Positives (FP):** 1
+- **False Negatives (FN):** 1
+- **Precision:** 0.83
+- **Recall:** 0.83
+
+### Threshold: 0.50
+- **True Positives (TP):** 5
+- **False Positives (FP):** 1
+- **False Negatives (FN):** 1
+- **Precision:** 0.83
+- **Recall:** 0.83
+
+### Threshold: 0.45
+- **True Positives (TP):** 5
+- **False Positives (FP):** 1
+- **False Negatives (FN):** 1
+- **Precision:** 0.83
+- **Recall:** 0.83
+
+### Threshold: 0.40
+- **True Positives (TP):** 5
+- **False Positives (FP):** 2
+- **False Negatives (FN):** 1
+- **Precision:** 0.71
+- **Recall:** 0.83
+
+### Threshold: 0.35
+- **True Positives (TP):** 5
+- **False Positives (FP):** 2
+- **False Negatives (FN):** 1
+- **Precision:** 0.71
+- **Recall:** 0.83
+
+### Threshold: 0.30
+- **True Positives (TP):** 5
+- **False Positives (FP):** 2
+- **False Negatives (FN):** 1
+- **Precision:** 0.71
+- **Recall:** 0.83
+
+### Threshold: 0.25
+- **True Positives (TP):** 5
+- **False Positives (FP):** 2
+- **False Negatives (FN):** 1
+- **Precision:** 0.71
+- **Recall:** 0.83
+
+## Mean Average Precision (mAP)
+
+- **mAP:** 0.84
+
+## Graphs
+
+### Precision-Recall Curve
+![Precision-Recall Curve](./notes-assets/precision_recall_curve.png)
+
+### Precision & Recall vs Threshold
+![Precision and Recall vs Threshold](./notes-assets/precision_recall_vs_threshold.png)
+
+### TP, FP, FN vs Threshold
+![TP, FP, FN vs Threshold](./notes-assets/tp_fp_fn_vs_threshold.png)
+
+
+
