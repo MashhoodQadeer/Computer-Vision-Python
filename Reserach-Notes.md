@@ -192,5 +192,24 @@
 ### TP, FP, FN vs Threshold
 ![TP, FP, FN vs Threshold](./notes-assets/tp_fp_fn_vs_threshold.png)
 
+### 📌 Final Observation
+
+- At **0.45 Threshold**, both precision and recall were highest.
+- Stricter thresholds (0.75) reduce performance by considering small misalignments as incorrect predictions.
+- Choose a threshold based on the use case. Lower thresholds work better for lenient scenarios, while higher thresholds are best when precision is critical.
+
+---
+
+### 🖼 Open Images Dataset
+We use the [Open Images Dataset](https://storage.googleapis.com/openimages/web/index.html) to download high-quality, annotated images suitable for training and testing computer vision models. This dataset includes object bounding boxes, segmentation masks, and more.
+
+### ✍️ Annotation Tool - CVAT
+To annotate or refine annotations on the dataset, we use [CVAT (Computer Vision Annotation Tool)](https://cvat.ai). It's an open-source web-based tool designed for labeling images and videos, supporting bounding boxes, polygons, and more.
+
+### 📸 Alternative Image Source - Pexels
+We also use [Pexels](https://www.pexels.com) to source free-to-use, high-resolution images. This is helpful for diversifying the dataset or adding custom classes when needed.
+
+### 🛠 Image Collection from Pexels
+To automate the image collection from Pexels, we use scripting or available APIs to fetch relevant images based on keywords (e.g., `apples`, `fruits`, etc.), ensuring our dataset is robust and diverse.
 
 
