@@ -1,15 +1,15 @@
 # 📚 Research Notes: Computer Vision for Object Detection & Voice Similarity  
 
 ## 🎯 **1. Object Detection in Computer Vision**  
-**Definition**:  
+**Definition**:
 > *"A computer vision method for locating and identifying things in pictures and movies is called object detection."*  
 
-### 🔧 **Key Technologies**  
-#### **A. Frameworks & Libraries**  
-1. **MediaPipe (Python)**  
-   - Specialized in **real-time facial and hand detection**.  
-   - Lightweight, optimized for mobile/edge devices.  
-   - *Example Use Case*: Augmented reality filters.  
+### 🔧 **Key Technologies**
+#### **A. Frameworks & Libraries**
+1. **MediaPipe (Python)**
+   - Specialized in **real-time facial and hand detection**.
+   - Lightweight, optimized for mobile/edge devices.
+   - *Example Use Case*: Augmented reality filters.
 
 2. **OpenCV with Haar Cascades**  
    - Classic method for **Haar-based object detection**.  
@@ -203,13 +203,11 @@
 ### 🖼 Open Images Dataset
 We use the [Open Images Dataset](https://storage.googleapis.com/openimages/web/index.html) to download high-quality, annotated images suitable for training and testing computer vision models. This dataset includes object bounding boxes, segmentation masks, and more.
 
-### ✍️ Annotation Tool - CVAT
-To annotate or refine annotations on the dataset, we use [CVAT (Computer Vision Annotation Tool)](https://cvat.ai). It's an open-source web-based tool designed for labeling images and videos, supporting bounding boxes, polygons, and more.
+### ✍️ Annotation Tool - 
+To annotate or refine annotations on the dataset, we use [Label Studio (Label Studio)](https://github.com/MashhoodQadeer/label-studio). It's an open-source web-based tool designed for labeling images and videos, supporting bounding boxes, polygons, and more.
 
 ### 📸 Alternative Image Source - Pexels
 We also use [Pexels](https://www.pexels.com) to source free-to-use, high-resolution images. This is helpful for diversifying the dataset or adding custom classes when needed.
 
 ### 🛠 Image Collection from Pexels
 To automate the image collection from Pexels, we use scripting or available APIs to fetch relevant images based on keywords (e.g., `apples`, `fruits`, etc.), ensuring our dataset is robust and diverse.
-
-
